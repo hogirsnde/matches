@@ -1,0 +1,449 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 410;
+  font-style: normal;
+}
+.header-fixture{
+  width: 100%;
+  padding: 0 50px;
+  margin-top: 85px;
+  background: url("./photo_2023-12-05_21-30-32.jpeg");
+background-size: cover;
+height: 426px;
+display: flex;
+align-items: center;
+margin-top: 60px;
+justify-content: space-between;
+}
+.header-fixture .left {
+  color:  white;
+}
+
+.header-fixture .left h1{
+  font-family: Noto Sans;
+font-size: 50px;
+font-weight: 700;
+line-height: 52px;
+letter-spacing: 0em;
+text-align: left;
+}
+.header-fixture .left p{
+  font-family: Noto Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+opacity: .8;  
+}
+
+
+.header-fixture .right img{
+  width: 218px;
+  height: 218px;
+  
+  border-radius: 199px;
+  
+}
+
+/*--Scroll--*/
+.fixture_wrapper {
+margin:0px auto;
+  padding: 35px;
+  position: relative;
+  overflow-x: hidden;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 13px;
+}
+.fixture_wrapper .icon {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.fixture_wrapper .icon:first-child {
+  left: 0;
+  display: none;
+  background: linear-gradient(90deg, #fff 70%, transparent);
+}
+.fixture_wrapper .icon:last-child {
+  right: 0;
+  justify-content: flex-end;
+  background: linear-gradient(-90deg, #fff 70%, transparent);
+}
+.fixture_wrapper .icon i {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+}
+.fixture_wrapper .icon i:hover {
+  background: #efedfb;
+}
+.fixture_wrapper .icon:first-child i {
+  margin-left: 15px;
+} 
+.fixture_wrapper .icon:last-child i {
+  margin-right: 15px;
+} 
+.fixture_wrapper .tabs-box {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.fixture_wrapper .tabs-box.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+.fixture_wrapper .tabs-box .tab {
+  cursor: pointer;
+  font-size: 1.18rem;
+  white-space: nowrap;
+  background: #f5f4fd;
+  padding: 13px 20px;
+  border-radius: 30px;
+  border: 1px solid #d8d5f2;
+}
+.fixture_wrapper .tabs-box .tab:hover{
+  background: #efedfb;
+}
+.fixture_wrapper .tabs-box.dragging .tab {
+  user-select: none;
+  pointer-events: none;
+}
+.fixture_wrapper .tabs-box .tab.active{
+  color: #fff;
+  background: rgb(205, 3, 3);
+  border-color: transparent;
+}
+
+/* ------------------------- */
+.all_card{
+  width: 98%;
+margin: 10px auto;
+}
+.all_card .matches{
+  display: flex;
+  width: 98%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.all_card .events .one{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.all_card .events{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: #0F2145 ;
+}
+.all_card .events .one button{
+  border: 0;
+  outline: 0;
+margin: 10px 0px;
+border-radius: 5px;
+font-size: 17px;
+width: 200px;
+color:rgb(184, 5, 5)  ;
+background-color: white;
+font-weight: 600;
+padding: 8px 14px;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.all_card .events .two{
+  margin-top: 10px;
+  color: #0F2145 !important;
+}
+
+.all_card .events .one button:hover{
+background-color: white;
+}
+
+.all_card .fix_zakho{
+  margin-top: 40px;
+}
+.all_card  .matches .card_fixture{
+  background: url("./5253908.jpg");
+background-size: cover;
+background-position:bottom;
+  width: 30% ;
+  margin: 20px 0;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  /* background-color: #0F2145; */
+}
+.all_card .card_fixture img{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.all_card .card_fixture .header_fixture .club{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white ;
+font-size: 18px;
+}
+.all_card .card_fixture .header_fixture .fixvs{
+  margin: 0px 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.all_card .card_fixture .header_fixture .headvs img{
+width: 100px;
+height: 90px;
+}
+.all_card .card_fixture .header_fixture .footvs{
+  color: white;
+  display: flex;
+  font-weight: 900;
+  margin: 0 20px;
+}
+.all_card .card_fixture .header_fixture .footvs{
+font-size: 35px;
+}
+.all_card .card_fixture .header_fixture .club p{ 
+margin-top: 10px;
+}
+.all_card .card_fixture .header_fixture{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 45%;
+}
+.card_fixture .header_fixture h1{
+color: white;
+margin: 0px 30px;
+border: 5px solid #ffffff;
+border-radius: 50%;
+width: 70px;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.card_fixture .footer_fixture p{
+  color:#14142BF2 !important; 
+
+}
+.card_fixture .footer_fixture
+{
+  padding: 15px 0;
+  height: 55%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 40px;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+background-color: rgb(254, 254, 254) !important;
+}
+.card_fixture .footer_fixture p
+{
+font-size: 16px;
+font-weight: 500;
+color: rgb(20, 20, 43);
+text-size-adjust :100%;
+}
+.card_fixture .footer_fixture .one_fix,
+.card_fixture .footer_fixture .two_fix,
+.card_fixture .footer_fixture .three_fix,
+.card_fixture .footer_fixture .btn
+{
+  color:#14142BF2 !important; 
+  font-weight: 500;
+  display: flex;
+}
+.card_fixture .footer_fixture .one_fix i,
+.card_fixture .footer_fixture .two_fix i,
+.card_fixture .footer_fixture .three_fix i,
+.card_fixture .footer_fixture .btn i
+{
+margin-right: 10px;
+}
+.card_fixture .footer_fixture .btn
+{
+background-color: #0F2145;
+padding: 8px 30px;
+align-self: flex-end;
+margin-right: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+color: white  !important;
+}
+.card_fixture .footer_fixture .btn p
+{
+ color: white !important; 
+}
+@media screen and (max-width:950px) {
+  .all_card  .matches .card_fixture{
+width: 45%;
+}
+}
+@media screen and (max-width:600px) {
+
+  .all_card  .matches .card_fixture{
+width: 90% ;
+  }
+}
+
+
+
+
+/* ----- */
+
+
+.modal_fixture{
+display: flex;
+justify-content: center;
+  position: absolute;
+  left: 0px;
+  top: 60px;
+  border-radius: 20px; 
+  background-color: #ffffff;
+  height: 240px;
+  width: 390px;
+z-index: 44444;
+box-shadow: rgba(0, 0, 0, 1) 0px 0px 5px -3px, rgba(0, 0, 0, 0.09) 0px 0px 0px 0px;
+background-color: white;
+
+color:#0F2145;
+display: none;
+}
+.modal_fixture.act{
+  display: block;
+}
+.modal_fixture .check {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: lightgray;
+  border-radius: 50%;
+}
+.modal_fixture .container {
+  margin: 20px;
+  display: flex;
+justify-content: space-between;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 25px;
+}
+.modal_fixture .container img{
+margin-bottom: 0px;
+border-radius: 50%;
+}
+/* Hide the default radio button */
+.modal_fixture .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* custom radio button */
+.modal_fixture .check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: aliceblue;
+  border: 1px solid #0F2145;
+  border-radius: 20%;
+}
+
+.modal_fixture .container:hover input ~ .check {
+  background-color: rgb(0, 0, 0);
+}
+.modal_fixture .container img{
+  width: 50px;
+}
+
+.container input:checked ~ .check {
+  background-color: rgb(0, 0, 0);
+}
+.modal_fixture  .showevents{
+  padding: 10px 40px !important;
+  margin-left: 20px !important;
+  background-color: #ffffff !important;
+  color: #0F2145 !important;
+}
+
+.modal_fixture .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.modal_fixture .container input:checked ~ .check:after {
+  display: block;
+}
+
+.modal_fixture .container .check:after {
+     top: 8px;
+    left: 8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+
+
+/*  */
+
+@media screen and (max-width:550px){
+  .header-fixture{
+    width: 100%;
+    padding: 0 0px;
+}
+
+
+.header-fixture{
+flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.header-fixture .left h1 {
+  font-size: 24px;
+}
+.header-fixture .left p {
+  font-size: 16px; 
+  text-align: center;
+}
+
+}
